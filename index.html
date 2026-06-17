@@ -123,7 +123,7 @@ button{background:none;border:none;font-family:inherit;cursor:pointer}
 
 /* ══ HERO ════════════════════════════════════════════════════ */
 #hero{min-height:min(100svh,680px);background:var(--navy);display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden}
-#hero::after{content:'';position:absolute;width:44%;aspect-ratio:1;background:url('logomarcas/Icone.png') no-repeat center/contain;opacity:.07;left:50%;top:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:1}
+#hero::after{content:'';position:absolute;width:clamp(260px,55%,620px);aspect-ratio:1;background:url('logomarcas/Icone.png') no-repeat center/contain;opacity:.13;left:50%;top:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:1}
 /* Diagonal accent (from PDF brand identity) */
 .h-deco{position:absolute;inset:0;pointer-events:none;overflow:hidden}
 .h-deco::before{content:'';position:absolute;top:-10%;right:45%;bottom:-10%;width:6px;background:var(--or);opacity:.35;transform:skewX(-4deg)}
@@ -176,7 +176,7 @@ button{background:none;border:none;font-family:inherit;cursor:pointer}
 
 /* ══ PILARES ════════════════════════════════════════════════ */
 #pilares{background:var(--wh);padding:clamp(52px,6vw,80px) 0;position:relative;overflow:hidden}
-#pilares::after{content:'';position:absolute;width:46%;aspect-ratio:1;background:url('logomarcas/07_X3.png') no-repeat center/contain;opacity:.05;left:50%;top:50%;transform:translate(-50%,-50%);pointer-events:none}
+#pilares::after{content:'';position:absolute;width:clamp(240px,55%,620px);aspect-ratio:1;background:url('logomarcas/07_X3.png') no-repeat center/contain;opacity:.09;left:50%;top:50%;transform:translate(-50%,-50%);pointer-events:none}
 .pil-header{text-align:center;margin-bottom:clamp(44px,6vw,60px)}
 .pil-header .h2{margin-top:12px}
 .pil-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--ll)}
@@ -192,7 +192,7 @@ button{background:none;border:none;font-family:inherit;cursor:pointer}
 
 /* ══ SERVIÇOS ═══════════════════════════════════════════════ */
 #servicos{background:var(--navy);padding:clamp(52px,6vw,80px) 0;position:relative;overflow:hidden}
-#servicos::after{content:'';position:absolute;width:44%;aspect-ratio:1;background:url('logomarcas/Icone.png') no-repeat center/contain;opacity:.07;left:50%;top:50%;transform:translate(-50%,-50%);pointer-events:none}
+#servicos::after{content:'';position:absolute;width:clamp(260px,58%,660px);aspect-ratio:1;background:url('logomarcas/Icone.png') no-repeat center/contain;opacity:.14;left:50%;top:50%;transform:translate(-50%,-50%);pointer-events:none}
 .sv-hd{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:end;margin-bottom:clamp(44px,5vw,56px)}
 .sv-hd .h2w{margin-top:12px}
 .sv-hd .lead-wh{max-width:400px}
@@ -226,7 +226,7 @@ button{background:none;border:none;font-family:inherit;cursor:pointer}
 
 /* ══ SOBRE ═══════════════════════════════════════════════════ */
 #sobre{background:var(--off);padding:clamp(52px,6vw,80px) 0 clamp(28px,3vw,40px);position:relative;overflow:hidden}
-#sobre::after{content:'';position:absolute;width:46%;aspect-ratio:1;background:url('logomarcas/07_X3.png') no-repeat center/contain;opacity:.05;left:50%;top:50%;transform:translate(-50%,-50%);pointer-events:none}
+#sobre::after{content:'';position:absolute;width:clamp(240px,55%,620px);aspect-ratio:1;background:url('logomarcas/07_X3.png') no-repeat center/contain;opacity:.09;left:50%;top:50%;transform:translate(-50%,-50%);pointer-events:none}
 .sob-grid{display:grid;grid-template-columns:5fr 6fr;gap:clamp(44px,7vw,80px);align-items:center}
 .sob-img-wrap{position:relative}
 .sob-img{width:100%;aspect-ratio:3/2;object-fit:cover;object-position:center}
@@ -273,7 +273,7 @@ button{background:none;border:none;font-family:inherit;cursor:pointer}
 
 /* ══ POR QUE CONTRATAR ══════════════════════════════════════ */
 #porque{background:var(--off);padding:clamp(28px,3vw,40px) 0 clamp(52px,6vw,80px);position:relative;overflow:hidden}
-#porque::after{content:'';position:absolute;width:46%;aspect-ratio:1;background:url('logomarcas/07_X3.png') no-repeat center/contain;opacity:.05;left:50%;top:50%;transform:translate(-50%,-50%);pointer-events:none}
+#porque::after{content:'';position:absolute;width:clamp(240px,55%,620px);aspect-ratio:1;background:url('logomarcas/07_X3.png') no-repeat center/contain;opacity:.09;left:50%;top:50%;transform:translate(-50%,-50%);pointer-events:none}
 .pq-header{margin-bottom:clamp(44px,6vw,60px)}
 .pq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--ll)}
 .pq-card{background:var(--wh);padding:clamp(24px,3vw,36px) clamp(20px,2.5vw,30px);position:relative;transition:background .2s}

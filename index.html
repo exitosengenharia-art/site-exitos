@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Êxitos Engenharia — Orçamento · Projetos · Planejamento · Natal, RN</title>
+<meta name="description" content="Especialistas em orçamento, projetos e planejamento de obras em Natal, RN. Felipe Barbosa de Godoy — Eng. Civil CREA-RN Nº 2116192331."/>
+<!-- Open Graph -->
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Êxitos Engenharia — Orçamento · Projetos · Planejamento"/>
+<meta property="og:description" content="Não executamos obras — planejamos o êxito delas. Especialistas em orçamento, projetos e planejamento em Natal, RN."/>
+<meta property="og:image" content="logomarcas/Logotipo Principal.png"/>
+<meta property="og:locale" content="pt_BR"/>
+<!-- Twitter/X -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Êxitos Engenharia — Orçamento · Projetos · Planejamento"/>
+<meta name="twitter:description" content="Não executamos obras — planejamos o êxito delas. Especialistas em orçamento, projetos e planejamento em Natal, RN."/>
+<link rel="icon" type="image/png" href="logomarcas/07_X3.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet"/>
+<style>
+/* ══ TOKENS ═════════════════════════════════════════════════ */
+:root{
+  --navy:   #1B3A5C;
+  --navy-d: #122A44;
+  --navy-l: #254E7A;
+  --navy-ld: rgba(27,58,92,.06);
+  --or:     #C8581A;
+  --orh:    #A54515;
+  --or-lt:  rgba(200,88,26,.12);
+  --or-md:  rgba(200,88,26,.22);
+  --wh:     #FFFFFF;
+  --off:    #F2F6FB;
+  --surf:   #EAF0F8;
+  --tk:     #102035;
+  --mut:    #4E6880;
+  --sub:    #7A96B2;
+  --ll:     #CCD9E8;
+  --ld:     rgba(255,255,255,.08);
+  --ldb:    rgba(255,255,255,.15);
+  --fh:     'Syne',sans-serif;
+  --fb:     'Inter',sans-serif;
+  --max:    1100px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--fb);color:var(--tk);background:var(--wh);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{background:none;border:none;font-family:inherit;cursor:pointer}
+.wrap{max-width:var(--max);margin-inline:auto;padding-inline:clamp(20px,5vw,48px)}
+
+/* ══ REVEAL ═════════════════════════════════════════════════ */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s cubic-bezier(.16,1,.3,1)}
+.rv.on{opacity:1;transform:none}
+.rl{opacity:0;transform:translateX(-32px);transition:opacity .7s ease,transform .7s cubic-bezier(.16,1,.3,1)}
+.rl.on{opacity:1;transform:none}
+.rr{opacity:0;transform:translateX(32px);transition:opacity .7s ease,transform .7s cubic-bezier(.16,1,.3,1)}
+.rr.on{opacity:1;transform:none}
+.stg>*{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s cubic-bezier(.16,1,.3,1)}
+.stg.on>*{opacity:1;transform:none}
+.stg.on>*:nth-child(1){transition-delay:.04s}
+.stg.on>*:nth-child(2){transition-delay:.11s}
+.stg.on>*:nth-child(3){transition-delay:.18s}
+.stg.on>*:nth-child(4){transition-delay:.25s}
+.stg.on>*:nth-child(5){transition-delay:.32s}
+.stg.on>*:nth-child(6){transition-delay:.39s}
+.stg.on>*:nth-child(7){transition-delay:.46s}
+
+/* ══ UTILITY ════════════════════════════════════════════════ */
+.tag{display:inline-flex;align-items:center;gap:8px;font-size:.56rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase}
+.tag-or{color:var(--or)}.tag-or::before{content:'';width:16px;height:1.5px;background:var(--or)}
+.tag-wh{color:rgba(255,255,255,.45)}.tag-wh::before{content:'';width:16px;height:1.5px;background:rgba(255,255,255,.45)}
+.h1{font-family:var(--fh);font-size:clamp(2.4rem,5.5vw,4.8rem);font-weight:800;line-height:1;letter-spacing:-.03em;color:#fff}
+.h1 em{font-style:normal;color:var(--or)}
+.h2{font-family:var(--fh);font-size:clamp(1.6rem,3.2vw,2.4rem);font-weight:800;line-height:1.08;letter-spacing:-.022em;color:var(--tk)}
+.h2 em{font-style:normal;color:var(--or)}
+.h2w{color:#fff}.h2w em{color:var(--or)}
+.lead{font-size:.92rem;line-height:1.9;color:var(--mut)}
+.lead-wh{color:rgba(255,255,255,.45);font-size:.88rem;line-height:1.9}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--fb);font-size:.8rem;font-weight:600;padding:13px 26px;border-radius:2px;border:1.5px solid transparent;cursor:pointer;transition:all .22s;white-space:nowrap;letter-spacing:.01em}
+.btn-or{background:var(--or);color:#fff;border-color:var(--or)}
+.btn-or:hover{background:var(--orh);border-color:var(--orh);transform:translateY(-2px);box-shadow:0 8px 24px rgba(200,88,26,.35)}
+.btn-wh{background:#fff;color:var(--navy);border-color:#fff}
+.btn-wh:hover{background:var(--off);transform:translateY(-2px)}
+.btn-out{background:transparent;color:#fff;border-color:rgba(255,255,255,.25)}
+.btn-out:hover{border-color:#fff;background:rgba(255,255,255,.07)}
+.btn-navy{background:var(--navy);color:#fff;border-color:var(--navy)}
+.btn-navy:hover{background:var(--navy-d);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--mut);border-color:var(--ll)}
+.btn-ghost:hover{border-color:var(--navy);color:var(--navy)}
+
+/* ══ NAV ════════════════════════════════════════════════════ */
+#nav{position:fixed;inset:0 0 auto;z-index:900;height:58px;display:flex;align-items:center;transition:all .3s}
+#nav.solid{background:rgba(18,42,68,.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--ld);box-shadow:0 2px 24px rgba(0,0,0,.25)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:20px;width:100%}
+.brand{display:flex;align-items:center;gap:10px}
+.brand img{width:28px;height:28px;object-fit:contain;filter:brightness(0) invert(1);opacity:.9}
+.brand-txt .bt1{font-family:var(--fh);font-size:.8rem;font-weight:800;letter-spacing:.12em;color:#fff}
+.brand-txt .bt2{font-size:.42rem;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-top:1px}
+.nav-tel{font-size:.75rem;font-weight:500;color:rgba(255,255,255,.4);letter-spacing:.02em;transition:color .2s}
+.nav-tel:hover{color:#fff}
+.nav-wa{font-size:.75rem;font-weight:600;padding:8px 18px;background:var(--or);color:#fff;border-radius:2px;transition:background .2s}
+.nav-wa:hover{background:var(--orh)}
+.burger{display:none;flex-direction:column;gap:4.5px;padding:4px}
+.burger b{display:block;width:20px;height:1.5px;background:rgba(255,255,255,.7);border-radius:1px;transition:all .28s}
+.burger.open b:nth-child(1){transform:rotate(45deg) translate(4.5px,4.5px)}
+.burger.open b:nth-child(2){opacity:0}
+.burger.open b:nth-child(3){transform:rotate(-45deg) translate(4.5px,-4.5px)}
+#mob{display:none;position:fixed;inset:58px 0 0;background:rgba(14,30,50,.97);backdrop-filter:blur(24px);z-index:899;flex-direction:column;align-items:center;justify-content:center;gap:0}
+#mob.open{display:flex}
+#mob a{font-size:1.5rem;font-family:var(--fh);font-weight:700;color:rgba(255,255,255,.35);padding:16px 40px;transition:color .18s}
+#mob a:hover{color:#fff}
+#mob .nav-wa{margin-top:24px;font-size:.88rem;padding:13px 32px;border-radius:2px}
+
+/* ══ HERO ════════════════════════════════════════════════════ */
+#hero{min-height:100svh;background:var(--navy);display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden}
+/* Diagonal accent (from PDF brand identity) */
+.h-deco{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.h-deco::before{content:'';position:absolute;top:-10%;right:45%;bottom:-10%;width:6px;background:var(--or);opacity:.35;transform:skewX(-4deg)}
+.h-deco::after{content:'';position:absolute;top:-10%;right:calc(45% + 14px);bottom:-10%;width:2px;background:var(--or);opacity:.2;transform:skewX(-4deg)}
+/* Fine grid texture */
+.h-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);background-size:44px 44px;pointer-events:none}
+/* Radial glow */
+.h-glow{position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(200,88,26,.1) 0%,transparent 65%);top:20%;left:-5%;pointer-events:none}
+/* LEFT content */
+.h-left{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center;padding:clamp(96px,12vw,130px) clamp(24px,5vw,60px) clamp(48px,6vw,72px)}
+.h-logo-block{display:flex;align-items:center;gap:12px;margin-bottom:clamp(32px,4vw,48px)}
+.h-logo-ico{width:48px;height:48px;object-fit:contain;filter:brightness(0) invert(1)}
+.h-logo-txt .l1{font-family:var(--fh);font-size:1.1rem;font-weight:800;letter-spacing:.12em;color:#fff}
+.h-logo-txt .l2{font-size:.58rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-top:2px}
+.h-title{font-family:var(--fh);font-size:clamp(2.2rem,5vw,4.2rem);font-weight:800;line-height:1.02;letter-spacing:-.03em;color:#fff;margin-bottom:20px}
+.h-title em{font-style:normal;color:var(--or)}
+.h-title .tl{display:block;overflow:hidden;padding-bottom:.04em}
+.h-title .tw{display:inline-block;transform:translateY(105%);transition:transform .9s cubic-bezier(.16,1,.3,1)}
+.h-title.on .tw{transform:translateY(0)}
+.h-title.on .tl:nth-child(2) .tw{transition-delay:.08s}
+.h-title.on .tl:nth-child(3) .tw{transition-delay:.16s}
+.h-title.on .tl:nth-child(4) .tw{transition-delay:.24s}
+.h-title.on .tl:nth-child(5) .tw{transition-delay:.32s}
+.h-title.on .tl:nth-child(6) .tw{transition-delay:.40s}
+.h-sub{font-size:.88rem;color:rgba(255,255,255,.42);line-height:1.9;max-width:440px;margin-bottom:32px}
+.h-btns{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:clamp(36px,5vw,52px)}
+/* Stats row */
+.h-stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ld);padding-top:28px;gap:0}
+.hs-item{padding-right:16px;border-right:1px solid var(--ld)}
+.hs-item:last-child{border-right:none}
+.hs-val{font-family:var(--fh);font-size:clamp(1.3rem,2.2vw,1.9rem);font-weight:800;color:#fff;line-height:1;margin-bottom:5px}
+.hs-val em{font-style:normal;color:var(--or)}
+.hs-lbl{font-size:.55rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.28)}
+/* RIGHT: photo panel */
+.h-right{position:relative;overflow:hidden}
+.h-right::before{content:'';position:absolute;inset:0;background:linear-gradient(to right,var(--navy) 0%,rgba(27,58,92,.55) 40%,rgba(27,58,92,.2) 100%);z-index:1}
+.h-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:grayscale(20%)contrast(1.05);transition:transform 8s ease;transform:scale(1.04)}
+#hero:hover .h-photo{transform:scale(1)}
+/* Credential floating card */
+.h-cred{position:absolute;bottom:40px;right:32px;background:rgba(18,42,68,.88);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.12);border-left:3px solid var(--or);padding:16px 20px;z-index:2;min-width:200px}
+.hc-label{font-size:.5rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:10px}
+.hc-item{font-size:.72rem;font-weight:500;color:rgba(255,255,255,.65);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06);display:flex;align-items:center;gap:7px}
+.hc-item:last-child{border-bottom:none}
+.hc-item::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--or);flex-shrink:0}
+/* Scroll cue */
+.h-scroll{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:6px;opacity:.4}
+.h-scroll-line{width:1px;height:36px;background:linear-gradient(to bottom,transparent,#fff);animation:sc 1.8s ease-in-out infinite}
+@keyframes sc{0%,100%{transform:scaleY(1);opacity:.4}50%{transform:scaleY(1.4);opacity:1}}
+.h-scroll-txt{font-size:.48rem;letter-spacing:.22em;text-transform:uppercase;color:#fff}
+
+/* ══ PILARES ════════════════════════════════════════════════ */
+#pilares{background:var(--wh);padding:clamp(72px,9vw,108px) 0}
+.pil-header{text-align:center;margin-bottom:clamp(44px,6vw,60px)}
+.pil-header .h2{margin-top:12px}
+.pil-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--ll)}
+.pillar{background:var(--wh);padding:clamp(28px,4vw,44px) clamp(22px,3vw,32px);transition:background .2s}
+.pillar:hover{background:var(--off)}
+.pillar-ico{width:48px;height:48px;background:var(--or-lt);border-radius:2px;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.pillar-ico svg{width:22px;height:22px;color:var(--or)}
+.pillar-title{font-family:var(--fh);font-size:1.1rem;font-weight:700;color:var(--tk);margin-bottom:16px}
+.pillar-list{display:flex;flex-direction:column;gap:0}
+.pillar-list li{font-size:.78rem;color:var(--mut);padding:7px 0;border-bottom:1px solid var(--ll);display:flex;align-items:center;gap:8px;line-height:1.4}
+.pillar-list li:last-child{border-bottom:none}
+.pillar-list li::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--or);flex-shrink:0}
+
+/* ══ SERVIÇOS ═══════════════════════════════════════════════ */
+#servicos{background:var(--navy);padding:clamp(72px,9vw,108px) 0}
+.sv-hd{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:end;margin-bottom:clamp(44px,5vw,56px)}
+.sv-hd .h2w{margin-top:12px}
+.sv-hd .lead-wh{max-width:400px}
+.sv-list{border-top:1px solid var(--ld)}
+/* Accordion item */
+.sv{border-bottom:1px solid var(--ld);position:relative;overflow:hidden;transition:background .25s}
+.sv::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--or);transform:scaleY(0);transform-origin:top;transition:transform .38s cubic-bezier(.16,1,.3,1)}
+.sv.open::before{transform:scaleY(1)}
+.sv.open{background:rgba(255,255,255,.03)}
+.sv-head{display:grid;grid-template-columns:48px 1fr auto auto;align-items:center;gap:18px;padding:20px 0;cursor:pointer;user-select:none}
+.sv-num{font-family:'Courier New',monospace;font-size:.68rem;font-weight:700;color:rgba(255,255,255,.2);transition:color .25s;flex-shrink:0}
+.sv.open .sv-num{color:var(--or)}
+.sv-name{font-family:var(--fh);font-size:clamp(.9rem,1.8vw,1.2rem);font-weight:700;color:rgba(255,255,255,.65);transition:color .25s}
+.sv.open .sv-name,.sv-head:hover .sv-name{color:#fff}
+.sv-norm{font-size:.55rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.18);text-align:right;white-space:nowrap;transition:color .25s}
+.sv.open .sv-norm{color:rgba(255,255,255,.35)}
+.sv-btn{width:26px;height:26px;border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .28s}
+.sv-btn svg{width:10px;height:10px;color:rgba(255,255,255,.28);transition:all .3s}
+.sv.open .sv-btn{border-color:var(--or);background:var(--or-lt)}
+.sv.open .sv-btn svg{color:var(--or);transform:rotate(45deg)}
+/* Body */
+.sv-body{max-height:0;overflow:hidden;transition:max-height .44s cubic-bezier(.4,0,.2,1)}
+.sv-body-in{display:grid;grid-template-columns:48px 1fr;gap:18px;padding-bottom:24px}
+.sv-desc{font-size:.82rem;color:rgba(255,255,255,.4);line-height:1.85;margin-bottom:14px}
+.sv-tags{display:flex;flex-wrap:wrap;gap:4px}
+.sv-tag{font-size:.56rem;font-weight:600;letter-spacing:.06em;border:1px solid rgba(255,255,255,.08);color:rgba(255,255,255,.28);padding:3px 8px}
+/* CTA inline */
+.sv-cta-bar{margin-top:clamp(40px,5vw,52px);display:flex;align-items:center;justify-content:space-between;padding:24px 28px;border:1px solid var(--ld);flex-wrap:wrap;gap:16px}
+.sv-cta-txt{font-size:.85rem;color:rgba(255,255,255,.45);font-weight:500}
+.sv-cta-txt strong{color:#fff;display:block;font-family:var(--fh);font-size:1rem;margin-bottom:3px}
+
+/* ══ SOBRE ═══════════════════════════════════════════════════ */
+#sobre{background:var(--off);padding:clamp(72px,9vw,108px) 0}
+.sob-grid{display:grid;grid-template-columns:5fr 6fr;gap:clamp(44px,7vw,80px);align-items:center}
+.sob-img-wrap{position:relative}
+.sob-img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top}
+/* Orange corner marks (brand detail) */
+.cx{position:absolute;width:30px;height:30px;border-color:var(--or);border-style:solid}
+.cx-tl{top:-8px;left:-8px;border-width:3px 0 0 3px}
+.cx-br{bottom:-8px;right:-8px;border-width:0 3px 3px 0}
+/* Floating spec card */
+.sob-spec{position:absolute;bottom:28px;left:-22px;background:var(--navy);border-left:3px solid var(--or);overflow:hidden}
+.sob-spec-head{font-size:.48rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.22);padding:9px 14px;border-bottom:1px solid var(--ld)}
+.sob-spec-row{display:flex;justify-content:space-between;padding:7px 14px;border-bottom:1px solid var(--ld);gap:12px}
+.sob-spec-row:last-child{border-bottom:none}
+.ss-k{font-size:.56rem;color:rgba(255,255,255,.28)}
+.ss-v{font-size:.6rem;font-weight:600;color:#fff}
+/* Content */
+.sob-content{display:flex;flex-direction:column;gap:20px}
+.sob-lead{font-size:.96rem;font-weight:500;color:var(--tk);line-height:1.7}
+.sob-body{font-size:.85rem;color:var(--mut);line-height:1.9}
+.sob-eng{background:var(--wh);border-left:3px solid var(--or);padding:14px 18px;font-size:.8rem;line-height:1.6}
+.sob-eng strong{color:var(--or);font-weight:700}
+.sob-eng span{color:var(--mut);display:block;margin-top:2px;font-size:.72rem}
+.sob-pills{display:flex;flex-wrap:wrap;gap:5px}
+.pill{font-size:.58rem;font-weight:600;letter-spacing:.04em;padding:4px 9px;border:1px solid var(--ll);color:var(--mut);background:var(--wh)}
+
+/* ══ GARANTIAS ══════════════════════════════════════════════ */
+#garantias{background:var(--navy);padding:clamp(72px,9vw,108px) 0}
+.gar-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(44px,7vw,80px);align-items:start}
+.gar-left{display:flex;flex-direction:column;gap:20px}
+.gar-left .h2w{margin-top:12px}
+.gar-left .lead-wh{max-width:400px}
+.gar-norms-box{border:1px solid var(--ld);padding:18px}
+.gnb-label{font-size:.48rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.2);margin-bottom:11px}
+.gnb-tags{display:flex;flex-wrap:wrap;gap:5px}
+.gt{font-size:.58rem;font-weight:600;letter-spacing:.06em;color:rgba(255,255,255,.38);border:1px solid rgba(255,255,255,.1);padding:3px 9px}
+/* Checklist right */
+.gar-list{border:1px solid var(--ld)}
+.gi{display:flex;align-items:flex-start;gap:14px;padding:18px;border-bottom:1px solid var(--ld);transition:background .2s}
+.gi:last-child{border-bottom:none}
+.gi:hover{background:rgba(255,255,255,.03)}
+.gi-ico{width:26px;height:26px;background:var(--or-lt);border:1px solid rgba(200,88,26,.25);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.gi-ico svg{width:11px;height:11px;color:var(--or)}
+.gi-t{font-size:.82rem;font-weight:600;color:#fff;margin-bottom:3px}
+.gi-d{font-size:.73rem;color:rgba(255,255,255,.3);line-height:1.6}
+
+/* ══ POR QUE CONTRATAR ══════════════════════════════════════ */
+#porque{background:var(--off);padding:clamp(72px,9vw,108px) 0}
+.pq-header{margin-bottom:clamp(44px,6vw,60px)}
+.pq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--ll)}
+.pq-card{background:var(--wh);padding:clamp(24px,3vw,36px) clamp(20px,2.5vw,30px);position:relative;transition:background .2s}
+.pq-card:hover{background:var(--surf)}
+.pq-n{font-family:'Courier New',monospace;font-size:.62rem;font-weight:700;color:var(--or);margin-bottom:16px;opacity:.7}
+.pq-ico{width:42px;height:42px;background:var(--or-lt);border-radius:2px;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.pq-ico svg{width:20px;height:20px;color:var(--or)}
+.pq-t{font-family:var(--fh);font-size:.96rem;font-weight:700;color:var(--tk);margin-bottom:12px;line-height:1.25}
+.pq-d{font-size:.78rem;color:var(--mut);line-height:1.85}
+/* Orange left accent on hover */
+.pq-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--or);transform:scaleY(0);transition:transform .35s ease}
+.pq-card:hover::before{transform:scaleY(1)}
+@media(max-width:960px){.pq-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.pq-grid{grid-template-columns:1fr}}
+
+/* ══ CTA FINAL ══════════════════════════════════════════════ */
+#cta{padding:0;background:var(--navy-d);position:relative;overflow:hidden}
+/* Diagonal split background */
+.cta-bg{display:grid;grid-template-columns:1fr 1fr;min-height:clamp(420px,55vw,560px)}
+.cta-left{background:var(--navy);position:relative;display:flex;flex-direction:column;justify-content:center;padding:clamp(52px,7vw,80px) clamp(24px,5vw,60px);overflow:hidden}
+/* Orange glow */
+.cta-left::before{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(200,88,26,.12) 0%,transparent 65%);top:50%;left:20%;transform:translate(-50%,-50%);pointer-events:none}
+/* Grid texture */
+.cta-left::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:40px 40px;pointer-events:none}
+.cta-content{position:relative;z-index:1}
+.cta-title{font-family:var(--fh);font-size:clamp(1.5rem,3vw,2.4rem);font-weight:800;color:#fff;line-height:1.08;letter-spacing:-.022em;margin-top:12px;margin-bottom:14px}
+.cta-title em{font-style:normal;color:var(--or)}
+.cta-body{font-size:.86rem;color:rgba(255,255,255,.35);line-height:1.9;margin-bottom:28px}
+.cta-btns{display:flex;gap:10px;flex-wrap:wrap}
+/* Right panel: dark + logo watermark */
+.cta-right{background:var(--navy-d);position:relative;display:flex;flex-direction:column;justify-content:center;padding:clamp(52px,7vw,80px) clamp(24px,5vw,60px);gap:6px;overflow:hidden}
+.cta-wm{position:absolute;bottom:-30px;right:-20px;width:70%;opacity:.05;filter:brightness(0) invert(1);pointer-events:none}
+.cc{position:relative;z-index:1;display:flex;align-items:center;gap:14px;padding:14px 16px;border:1px solid var(--ld);transition:all .22s}
+.cc:hover{border-color:rgba(255,255,255,.18);background:rgba(255,255,255,.04)}
+.cc-ico{width:34px;height:34px;background:var(--or-lt);border:1px solid rgba(200,88,26,.2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.cc-ico svg{width:14px;height:14px;color:var(--or)}
+.cc-lab{font-size:.5rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.22)}
+.cc-val{font-size:.82rem;font-weight:500;color:rgba(255,255,255,.65);margin-top:2px}
+
+/* ══ FOOTER ═════════════════════════════════════════════════ */
+footer{background:#0B1C2E;border-top:1px solid rgba(255,255,255,.04);padding:clamp(40px,5vw,56px) 0 clamp(20px,3vw,28px)}
+.foot-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:clamp(24px,4vw,48px);padding-bottom:clamp(32px,4vw,44px);border-bottom:1px solid rgba(255,255,255,.04);margin-bottom:clamp(20px,3vw,24px)}
+.foot-logo{width:22px;opacity:.28;filter:brightness(0) invert(1);margin-bottom:10px}
+.foot-brand{font-family:var(--fh);font-size:.66rem;font-weight:800;letter-spacing:.22em;color:rgba(255,255,255,.45);margin-bottom:8px}
+.foot-tag{font-size:.7rem;color:rgba(255,255,255,.18);line-height:1.75;max-width:190px;margin-bottom:16px}
+.foot-soc{display:flex;gap:5px}
+.sa{width:27px;height:27px;border:1px solid rgba(255,255,255,.06);display:flex;align-items:center;justify-content:center;transition:all .2s}
+.sa:hover{border-color:var(--or);background:var(--or-lt)}
+.sa svg{width:11px;height:11px;color:rgba(255,255,255,.28);transition:color .2s}
+.sa:hover svg{color:var(--or)}
+.foot-col h4{font-size:.48rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.14);margin-bottom:13px}
+.foot-col li+li{margin-top:8px}
+.foot-col a{font-size:.7rem;color:rgba(255,255,255,.2);transition:color .18s}
+.foot-col a:hover{color:rgba(255,255,255,.6)}
+.foot-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;font-size:.6rem;color:rgba(255,255,255,.1)}
+
+/* ══ FLOATING WA ════════════════════════════════════════════ */
+#wa-float{position:fixed;bottom:24px;right:24px;z-index:800;width:52px;height:52px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.35),0 0 0 0 rgba(37,211,102,.4);animation:waPulse 2.5s ease-in-out infinite;transition:transform .22s}
+#wa-float:hover{transform:scale(1.1)}
+#wa-float svg{width:26px;height:26px;color:#fff}
+@keyframes waPulse{0%,100%{box-shadow:0 4px 20px rgba(37,211,102,.35),0 0 0 0 rgba(37,211,102,.35)}50%{box-shadow:0 4px 20px rgba(37,211,102,.35),0 0 0 12px rgba(37,211,102,0)}}
+
+/* ══ RESPONSIVE ═════════════════════════════════════════════ */
+@media(max-width:960px){
+  #hero{grid-template-columns:1fr}
+  .h-right{display:none}
+  .h-left{min-height:100svh}
+  .h-stats{grid-template-columns:repeat(2,1fr)}
+  .hs-item:nth-child(2){border-right:none}
+  .hs-item:nth-child(3){border-top:1px solid var(--ld);margin-top:16px;padding-top:16px}
+  .hs-item:nth-child(4){border-top:1px solid var(--ld);border-right:none;margin-top:16px;padding-top:16px}
+  .pil-grid{grid-template-columns:1fr}
+  .sv-hd{grid-template-columns:1fr}
+  .sob-grid{grid-template-columns:1fr}
+  .sob-img{aspect-ratio:16/9}
+  .sob-spec{display:none}
+  .gar-grid{grid-template-columns:1fr}
+  .cta-bg{grid-template-columns:1fr}
+  .cta-right{padding-top:0}
+  .foot-top{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  .nav-tel{display:none}
+  .nav-links{display:none}
+  .nav-wa{display:none}
+  .burger{display:flex}
+  .sv-head{grid-template-columns:40px 1fr auto;gap:12px}
+  .sv-norm{display:none}
+  .h-btns{flex-direction:column}
+  .cta-btns{flex-direction:column}
+  .foot-top{grid-template-columns:1fr}
+  .foot-bottom{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/5584996414198" id="wa-float" aria-label="WhatsApp" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.529 5.847L0 24l6.335-1.509A11.956 11.956 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.004-1.368l-.36-.213-3.729.888.904-3.639-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+</a>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="wrap">
+    <div class="nav-in">
+      <a href="#" class="brand">
+        <img src="logomarcas/07_X3.png" alt=""/>
+        <div class="brand-txt">
+          <div class="bt1">ÊXITOS</div>
+          <div class="bt2">Engenharia</div>
+        </div>
+      </a>
+      <a href="tel:+5584996414198" class="nav-tel">(84) 99641-4198</a>
+      <a href="https://wa.me/5584996414198" class="nav-wa" target="_blank" rel="noopener">WhatsApp →</a>
+      <button class="burger" id="burger"><b></b><b></b><b></b></button>
+    </div>
+  </div>
+</nav>
+<div id="mob">
+  <a href="#pilares">Serviços</a>
+  <a href="#sobre">Sobre</a>
+  <a href="#garantias">Garantias</a>
+  <a href="#cta">Contato</a>
+  <a href="https://wa.me/5584996414198" class="nav-wa" target="_blank" rel="noopener">WhatsApp →</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="h-deco"></div>
+  <div class="h-grid"></div>
+  <div class="h-glow"></div>
+
+  <!-- LEFT content -->
+  <div class="h-left">
+    <div class="h-logo-block rv">
+      <img src="logomarcas/07_X3.png" alt="" class="h-logo-ico"/>
+      <div class="h-logo-txt">
+        <div class="l1">ÊXITOS ENGENHARIA</div>
+        <div class="l2">Orçamento · Projetos · Planejamento</div>
+      </div>
+    </div>
+
+    <h1 class="h-title">
+      <span class="tl"><span class="tw">Não</span></span>
+      <span class="tl"><span class="tw">executamos</span></span>
+      <span class="tl"><span class="tw"><em>obras.</em></span></span>
+      <span class="tl"><span class="tw">Planejamos</span></span>
+      <span class="tl"><span class="tw">o êxito</span></span>
+      <span class="tl"><span class="tw">delas.</span></span>
+    </h1>
+
+    <p class="h-sub rv">Orçamentos precisos, projetos técnicos e planejamento estratégico — com responsabilidade técnica total e ART registrada em cada entrega.</p>
+
+    <div class="h-btns rv">
+      <a href="https://wa.me/5584996414198" class="btn btn-or" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.529 5.847L0 24l6.335-1.509A11.956 11.956 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.004-1.368l-.36-.213-3.729.888.904-3.639-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+        Solicitar Orçamento
+      </a>
+      <a href="#pilares" class="btn btn-out">Ver Serviços ↓</a>
+    </div>
+
+    <div class="h-stats stg">
+      <div class="hs-item">
+        <div class="hs-val"><span class="counter" data-target="50">0</span><em>+</em></div>
+        <div class="hs-lbl">Projetos entregues</div>
+      </div>
+      <div class="hs-item">
+        <div class="hs-val"><span class="counter" data-target="7">0</span></div>
+        <div class="hs-lbl">Especialidades técnicas</div>
+      </div>
+      <div class="hs-item">
+        <div class="hs-val"><em>ART</em></div>
+        <div class="hs-lbl">Registrada em 100% dos projetos</div>
+      </div>
+      <div class="hs-item">
+        <div class="hs-val"><em>24</em>h</div>
+        <div class="hs-lbl">Para resposta ao orçamento</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: photo -->
+  <div class="h-right">
+    <img class="h-photo" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80" alt="Engenharia de planejamento"/>
+  </div>
+
+  <div class="h-scroll"><div class="h-scroll-line"></div><span class="h-scroll-txt">Rolar</span></div>
+</section>
+
+<!-- PILARES -->
+<section id="pilares">
+  <div class="wrap">
+    <div class="pil-header rv">
+      <span class="tag tag-or">O que fazemos</span>
+      <h2 class="h2" style="margin-top:12px">Três pilares.<br><em>Uma consultoria completa.</em></h2>
+    </div>
+    <div class="pil-grid stg">
+
+      <div class="pillar">
+        <div class="pillar-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+          </svg>
+        </div>
+        <div class="pillar-title">Orçamento</div>
+        <ul class="pillar-list">
+          <li>Para obras comerciais e residenciais</li>
+          <li>Orçamento Sintético gerencial</li>
+          <li>Orçamento Analítico detalhado</li>
+          <li>Composições de custos unitários</li>
+          <li>Curva ABC de Insumos</li>
+          <li>Curva ABC de Serviços</li>
+          <li>BDI e Encargos Sociais</li>
+          <li>Baseado em Sinapi / ORSE</li>
+        </ul>
+      </div>
+
+      <div class="pillar">
+        <div class="pillar-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 20h20M4 20V10l8-6 8 6v10"/><rect x="9" y="14" width="6" height="6"/>
+          </svg>
+        </div>
+        <div class="pillar-title">Projetos</div>
+        <ul class="pillar-list">
+          <li>Estrutural (CA e Estrutura Metálica)</li>
+          <li>Elétrico (NBR 5410)</li>
+          <li>Hidrossanitário (NBR 5626 / 8160)</li>
+          <li>Canteiro de Obras (NR-18)</li>
+          <li>Proteção Coletiva (NR-18 / NR-35)</li>
+          <li>Guarda-Corpo e Bandeja</li>
+          <li>Linha de Vida</li>
+          <li>Executivo de Escavação</li>
+        </ul>
+      </div>
+
+      <div class="pillar">
+        <div class="pillar-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+          </svg>
+        </div>
+        <div class="pillar-title">Planejamento</div>
+        <ul class="pillar-list">
+          <li>Cronograma Físico (Diagrama Gantt)</li>
+          <li>Cronograma Físico-Financeiro</li>
+          <li>Curva S de avanço</li>
+          <li>Histograma de recursos</li>
+          <li>Dimensionamento de equipe</li>
+          <li>EAP / WBS</li>
+          <li>Controle de fluxo de caixa</li>
+          <li>Termo de Referência</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS DETALHADOS -->
+<section id="servicos">
+  <div class="wrap">
+    <div class="sv-hd rv">
+      <div>
+        <span class="tag tag-wh">Serviços Detalhados</span>
+        <h2 class="h2w" style="margin-top:12px">7 especialidades técnicas.<br><em>Uma só consultoria.</em></h2>
+      </div>
+      <p class="lead-wh">Clique em cada serviço para ver o escopo técnico completo, normas aplicadas e entregáveis. Todos os projetos incluem ART registrada no CREA-RN.</p>
+    </div>
+
+    <div class="sv-list">
+
+      <div class="sv">
+        <div class="sv-head">
+          <span class="sv-num">01</span>
+          <span class="sv-name">Orçamento de Obras e Reformas</span>
+          <span class="sv-norm">ABNT · Curva ABC · Sinapi</span>
+          <div class="sv-btn"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/></svg></div>
+        </div>
+        <div class="sv-body"><div class="sv-body-in"><div></div><div>
+          <p class="sv-desc">Levantamento de quantitativos rigoroso, composições de custo unitário, orçamento sintético e analítico, memória de cálculo e Curva ABC de insumos. Cada linha é defensável tecnicamente e juridicamente — fundamental para licitações, financiamentos e contratos com construtoras. Usamos Sinapi/RN, ORSE e composições calibradas para o mercado potiguar.</p>
+          <div class="sv-tags"><span class="sv-tag">Quantitativos</span><span class="sv-tag">Sintético / Analítico</span><span class="sv-tag">Curva ABC</span><span class="sv-tag">Memória de Cálculo</span><span class="sv-tag">BDI / Encargos</span><span class="sv-tag">Sinapi / ORSE</span></div>
+        </div></div></div>
+      </div>
+
+      <div class="sv">
+        <div class="sv-head">
+          <span class="sv-num">02</span>
+          <span class="sv-name">Planejamento e Controle de Custos e Prazos</span>
+          <span class="sv-norm">EAP · Curva S · Histograma</span>
+          <div class="sv-btn"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/></svg></div>
+        </div>
+        <div class="sv-body"><div class="sv-body-in"><div></div><div>
+          <p class="sv-desc">Cronogramas físico-financeiros, Estrutura Analítica do Projeto (EAP/WBS), Curva S de avanço físico e financeiro, histogramas de recursos e dimensionamento de equipes. Planejamento que antecipa desvios antes que virem custo real — transformamos o cronograma em ferramenta de gestão, não em documento de gaveta.</p>
+          <div class="sv-tags"><span class="sv-tag">Cronograma Físico-Financeiro</span><span class="sv-tag">Curva S</span><span class="sv-tag">EAP / WBS</span><span class="sv-tag">Histograma</span><span class="sv-tag">Diagrama de Gantt</span></div>
+        </div></div></div>
+      </div>
+
+      <div class="sv">
+        <div class="sv-head">
+          <span class="sv-num">03</span>
+          <span class="sv-name">Projeto Estrutural</span>
+          <span class="sv-norm">ABNT NBR 6118 · NBR 7190</span>
+          <div class="sv-btn"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/></svg></div>
+        </div>
+        <div class="sv-body"><div class="sv-body-in"><div></div><div>
+          <p class="sv-desc">Projetos em concreto armado (NBR 6118) e estrutura metálica, compatibilizados com a arquitetura. Dimensionamento de fundações (sapatas, radier, estacas), pilares, vigas e lajes com detalhamento executivo completo, memória de cálculo e especificação de materiais.</p>
+          <div class="sv-tags"><span class="sv-tag">Concreto Armado</span><span class="sv-tag">Estrutura Metálica</span><span class="sv-tag">Fundações</span><span class="sv-tag">ABNT NBR 6118</span><span class="sv-tag">Detalhamento Executivo</span></div>
+        </div></div></div>
+      </div>
+
+      <div class="sv">
+        <div class="sv-head">
+          <span class="sv-num">04</span>
+          <span class="sv-name">Projeto Hidrossanitário</span>
+          <span class="sv-norm">ABNT NBR 5626 · NBR 8160</span>
+          <div class="sv-btn"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/></svg></div>
+        </div>
+        <div class="sv-body"><div class="sv-body-in"><div></div><div>
+          <p class="sv-desc">Sistemas prediais de água fria e quente (NBR 5626), esgoto sanitário (NBR 8160), drenagem pluvial e dimensionamento de reservatórios. Projetos com isométricas, pranchas executivas e especificação de materiais — eliminando improvisos que geram retrabalho e custo.</p>
+          <div class="sv-tags"><span class="sv-tag">Água Fria / Quente</span><span class="sv-tag">Esgoto Sanitário</span><span class="sv-tag">Águas Pluviais</span><span class="sv-tag">NBR 5626</span><span class="sv-tag">NBR 8160</span></div>
+        </div></div></div>
+      </div>
+
+      <div class="sv">
+        <div class="sv-head">
+          <span class="sv-num">05</span>
+          <span class="sv-name">Projeto Elétrico</span>
+          <span class="sv-norm">ABNT NBR 5410 · NR-10</span>
+          <div class="sv-btn"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/></svg></div>
+        </div>
+        <div class="sv-body"><div class="sv-body-in"><div></div><div>
+          <p class="sv-desc">Instalações de baixa tensão com foco em segurança operacional e eficiência energética. Diagrama unifilar, quadros de distribuição, dimensionamento de condutores e proteções, planta de iluminação e tomadas — em conformidade com NBR 5410 e normas da concessionária local (COSERN).</p>
+          <div class="sv-tags"><span class="sv-tag">Baixa Tensão</span><span class="sv-tag">Diagrama Unifilar</span><span class="sv-tag">Quadros de Distribuição</span><span class="sv-tag">NBR 5410</span><span class="sv-tag">COSERN</span></div>
+        </div></div></div>
+      </div>
+
+      <div class="sv">
+        <div class="sv-head">
+          <span class="sv-num">06</span>
+          <span class="sv-name">Projeto de Canteiro de Obras</span>
+          <span class="sv-norm">NR-18 · Portaria 3.214</span>
+          <div class="sv-btn"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/></svg></div>
+        </div>
+        <div class="sv-body"><div class="sv-body-in"><div></div><div>
+          <p class="sv-desc">Layout inteligente do espaço físico: fluxo de materiais, posicionamento de equipamentos, áreas de vivência (vestiários, refeitório, sanitários) e sinalização — em conformidade com NR-18. Um canteiro bem planejado reduz acidentes, melhora produtividade e elimina passivos trabalhistas.</p>
+          <div class="sv-tags"><span class="sv-tag">Layout de Canteiro</span><span class="sv-tag">Fluxo de Materiais</span><span class="sv-tag">Áreas de Vivência</span><span class="sv-tag">NR-18</span></div>
+        </div></div></div>
+      </div>
+
+      <div class="sv">
+        <div class="sv-head">
+          <span class="sv-num">07</span>
+          <span class="sv-name">Projeto de Proteção Coletiva</span>
+          <span class="sv-norm">NR-18 · NR-35 · NBR 16325</span>
+          <div class="sv-btn"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="5" y1="1" x2="5" y2="9"/><line x1="1" y1="5" x2="9" y2="5"/></svg></div>
+        </div>
+        <div class="sv-body"><div class="sv-body-in"><div></div><div>
+          <p class="sv-desc">Sistemas de proteção em altura projetados desde a concepção: guarda-corpos, bandejas salva-vidas, telas de proteção, andaimes, escada de madeira e linhas de vida — em conformidade com NR-18, NR-35 e NBR 16325. Memorial descritivo e ART registrada no CREA-RN inclusos.</p>
+          <div class="sv-tags"><span class="sv-tag">Guarda-Corpo</span><span class="sv-tag">Bandeja Salva-Vidas</span><span class="sv-tag">Linha de Vida</span><span class="sv-tag">Escada de Madeira</span><span class="sv-tag">NR-18</span><span class="sv-tag">NR-35</span></div>
+        </div></div></div>
+      </div>
+
+    </div>
+
+    <!-- Inline CTA -->
+    <div class="sv-cta-bar rv">
+      <div class="sv-cta-txt"><strong>Precisa de um orçamento ou projeto agora?</strong>Entre em contato e receba uma proposta técnica personalizada em até 24h.</div>
+      <a href="https://wa.me/5584996414198" class="btn btn-or" target="_blank" rel="noopener">Falar pelo WhatsApp →</a>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre">
+  <div class="wrap">
+    <div class="sob-grid">
+      <div class="sob-img-wrap rl">
+        <div class="cx cx-tl"></div>
+        <img src="logomarcas/06_X6.png" alt="Felipe Barbosa de Godoy — Êxitos Engenharia" class="sob-img"/>
+        <div class="cx cx-br"></div>
+      </div>
+      <div class="sob-content rr">
+        <span class="tag tag-or">Sobre a Êxitos</span>
+        <h2 class="h2" style="margin-top:14px">Escolhemos não executar.<br><em>Escolhemos ser especialistas.</em></h2>
+        <p class="sob-lead">A Êxitos Engenharia não executa obras — e essa é uma decisão estratégica deliberada. Ao focar exclusivamente em orçamento, projetos e planejamento, desenvolvemos profundidade técnica que construtoras executoras não conseguem atingir.</p>
+        <p class="sob-body">Atendemos construtoras, incorporadoras, indústrias, condomínios e clientes pessoa física que precisam tomar decisões de engenharia com embasamento técnico sólido. Nossa entrega não é apenas um arquivo PDF — é segurança jurídica, conformidade normativa e clareza estratégica para quem precisa tomar decisões de alto impacto.</p>
+        <div class="sob-eng">
+          <strong>Felipe Barbosa de Godoy</strong>
+          <span>Engenheiro Civil — CREA-RN Nº 2116192331</span>
+          <span style="margin-top:6px;font-size:.72rem;color:var(--mut)">Responsável Técnico · Êxitos Engenharia Ltda.</span>
+        </div>
+        <div class="sob-pills">
+          <span class="pill">ABNT NBR 5410</span><span class="pill">ABNT NBR 5626</span><span class="pill">ABNT NBR 6118</span>
+          <span class="pill">NR-18</span><span class="pill">NR-35</span><span class="pill">Curva ABC</span>
+          <span class="pill">EAP / WBS</span><span class="pill">Sinapi / ORSE</span>
+        </div>
+        <a href="https://wa.me/5584996414198" class="btn btn-navy" style="align-self:flex-start" target="_blank" rel="noopener">Falar diretamente com Felipe →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUE CONTRATAR -->
+<section id="porque">
+  <div class="wrap">
+    <div class="pq-header rv">
+      <span class="tag tag-or">Nossos diferenciais</span>
+      <h2 class="h2" style="margin-top:12px">Por que contratar<br>a <em>Êxitos Engenharia?</em></h2>
+      <p class="lead" style="max-width:540px;margin-top:14px">Existem muitas empresas de engenharia. Estas são as razões concretas pelas quais construtoras, incorporadoras e clientes pessoa física escolhem a Êxitos.</p>
+    </div>
+    <div class="pq-grid stg">
+      <div class="pq-card">
+        <div class="pq-n">01</div>
+        <div class="pq-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <div class="pq-t">Especialização exclusiva</div>
+        <div class="pq-d">Não executamos obras por escolha estratégica. Focamos 100% em orçamento, projetos e planejamento — desenvolvendo profundidade técnica que generalistas não conseguem atingir.</div>
+      </div>
+      <div class="pq-card">
+        <div class="pq-n">02</div>
+        <div class="pq-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+        </div>
+        <div class="pq-t">ART registrada em tudo</div>
+        <div class="pq-d">Anotação de Responsabilidade Técnica registrada no CREA-RN antes de cada entrega. Proteção jurídica real em fiscalizações, licenciamentos, financiamentos bancários e processos legais.</div>
+      </div>
+      <div class="pq-card">
+        <div class="pq-n">03</div>
+        <div class="pq-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="pq-t">Conformidade normativa total</div>
+        <div class="pq-d">Checklist de conformidade com normas ABNT e NRs antes de qualquer emissão. Seu projeto é defensável tecnicamente perante fiscais, bancos e em qualquer instância jurídica.</div>
+      </div>
+      <div class="pq-card">
+        <div class="pq-n">04</div>
+        <div class="pq-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <div class="pq-t">Suporte na execução</div>
+        <div class="pq-d">Não entregamos o arquivo e sumimos. Tiramos dúvidas da equipe de obra durante toda a execução, sem custo adicional. O trabalho da Êxitos termina quando a sua obra termina.</div>
+      </div>
+      <div class="pq-card">
+        <div class="pq-n">05</div>
+        <div class="pq-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+        </div>
+        <div class="pq-t">Orçamentos defensáveis</div>
+        <div class="pq-d">Baseados em Sinapi/ORSE com memória de cálculo completa. Cada linha justificada e auditável — essencial para licitações públicas, financiamentos CEF/BB e contratos com construtoras.</div>
+      </div>
+      <div class="pq-card">
+        <div class="pq-n">06</div>
+        <div class="pq-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+        <div class="pq-t">Transparência e Nota Fiscal</div>
+        <div class="pq-d">Todos os serviços emitidos com Nota Fiscal. Contratos claros, revisões dentro do escopo sem cobrança extra. Nenhuma surpresa no processo — do orçamento à entrega.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section id="cta">
+  <div class="cta-bg">
+    <div class="cta-left">
+      <div class="cta-content rv">
+        <span class="tag tag-wh">Fale com a Êxitos</span>
+        <h2 class="cta-title">Pronto para planejar<br>o êxito da <em>sua obra?</em></h2>
+        <p class="cta-body">Entre em contato agora e receba uma proposta técnica personalizada. Respondemos em até 24h — com escopo, prazo e investimento claros antes de qualquer compromisso.</p>
+        <div class="cta-btns">
+          <a href="https://wa.me/5584996414198" class="btn btn-or" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.529 5.847L0 24l6.335-1.509A11.956 11.956 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.004-1.368l-.36-.213-3.729.888.904-3.639-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+            Solicitar Orçamento no WhatsApp
+          </a>
+          <a href="mailto:exitosengenharia@gmail.com" class="btn btn-out">Enviar E-mail</a>
+        </div>
+      </div>
+    </div>
+    <div class="cta-right rv">
+      <img src="logomarcas/05_X1.png" alt="" class="cta-wm" aria-hidden="true"/>
+      <a href="https://wa.me/5584996414198" class="cc" target="_blank" rel="noopener">
+        <div class="cc-ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.529 5.847L0 24l6.335-1.509A11.956 11.956 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.004-1.368l-.36-.213-3.729.888.904-3.639-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg></div>
+        <div><div class="cc-lab">WhatsApp / Telefone</div><div class="cc-val">(84) 99641-4198</div></div>
+      </a>
+      <a href="mailto:exitosengenharia@gmail.com" class="cc">
+        <div class="cc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+        <div><div class="cc-lab">E-mail</div><div class="cc-val">exitosengenharia@gmail.com</div></div>
+      </a>
+      <a href="https://instagram.com/exitos.engenharia" target="_blank" rel="noopener" class="cc">
+        <div class="cc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
+        <div><div class="cc-lab">Instagram</div><div class="cc-val">@exitos.engenharia</div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <img src="logomarcas/07_X3.png" alt="" class="foot-logo"/>
+        <div class="foot-brand">ÊXITOS ENGENHARIA</div>
+        <p class="foot-tag">Orçamento · Projetos · Planejamento<br/>Precisão técnica em cada decisão.</p>
+        <div class="foot-soc">
+          <a href="https://wa.me/5584996414198" class="sa" aria-label="WhatsApp" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.529 5.847L0 24l6.335-1.509A11.956 11.956 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.004-1.368l-.36-.213-3.729.888.904-3.639-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg></a>
+          <a href="https://instagram.com/exitos.engenharia" class="sa" aria-label="Instagram" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="mailto:exitosengenharia@gmail.com" class="sa" aria-label="E-mail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#servicos">Orçamento de Obras</a></li>
+          <li><a href="#servicos">Planejamento e Controle</a></li>
+          <li><a href="#servicos">Projeto Estrutural</a></li>
+          <li><a href="#servicos">Projeto Hidrossanitário</a></li>
+          <li><a href="#servicos">Projeto Elétrico</a></li>
+          <li><a href="#servicos">Canteiro de Obras</a></li>
+          <li><a href="#servicos">Proteção Coletiva</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#pilares">O que fazemos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#garantias">Garantias</a></li>
+          <li><a href="#cta">Contato</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="tel:+5584996414198">(84) 99641-4198</a></li>
+          <li><a href="mailto:exitosengenharia@gmail.com">exitosengenharia@gmail.com</a></li>
+          <li><a href="https://instagram.com/exitos.engenharia" target="_blank">@exitos.engenharia</a></li>
+          <li style="color:rgba(255,255,255,.1);font-size:.68rem;margin-top:6px;pointer-events:none">Natal, RN — Brasil</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Êxitos Engenharia Ltda. Todos os direitos reservados.</span>
+      <span>CREA-RN Nº 2116192331 · Natal, RN</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* NAV */
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => nav.classList.toggle('solid', scrollY > 30), {passive:true});
+nav.classList.toggle('solid', scrollY > 30);
+
+/* BURGER */
+const burger = document.getElementById('burger'), mob = document.getElementById('mob');
+burger.addEventListener('click', () => {
+  burger.classList.toggle('open');
+  mob.classList.toggle('open');
+  document.body.style.overflow = mob.classList.contains('open') ? 'hidden' : '';
+});
+mob.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  burger.classList.remove('open'); mob.classList.remove('open'); document.body.style.overflow = '';
+}));
+
+/* SMOOTH SCROLL */
+document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
+  const t = document.querySelector(a.getAttribute('href'));
+  if (t) { e.preventDefault(); t.scrollIntoView({behavior:'smooth'}); }
+}));
+
+/* REVEAL */
+const ro = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); ro.unobserve(e.target); } });
+}, {threshold: 0.07, rootMargin: '0px 0px -20px 0px'});
+document.querySelectorAll('.rv,.rl,.rr,.stg').forEach(el => ro.observe(el));
+
+/* HERO TITLE */
+setTimeout(() => document.querySelector('.h-title')?.classList.add('on'), 160);
+
+/* COUNTERS */
+function runCount(el) {
+  const t = parseInt(el.dataset.target);
+  if (isNaN(t)) return;
+  const dur = 1500, s = performance.now();
+  const tick = (n) => {
+    const p = Math.min((n - s) / dur, 1), e = 1 - Math.pow(1 - p, 3.5);
+    el.textContent = Math.round(e * t);
+    if (p < 1) requestAnimationFrame(tick); else el.textContent = t;
+  };
+  requestAnimationFrame(tick);
+}
+const co = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { runCount(e.target); co.unobserve(e.target); } });
+}, {threshold: 0.5});
+document.querySelectorAll('.counter').forEach(el => co.observe(el));
+
+/* ACCORDION */
+document.querySelectorAll('.sv-head').forEach(head => {
+  head.addEventListener('click', () => {
+    const item = head.closest('.sv');
+    const body = item.querySelector('.sv-body');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.sv.open').forEach(sv => {
+      sv.classList.remove('open');
+      sv.querySelector('.sv-body').style.maxHeight = '0';
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      body.style.maxHeight = body.scrollHeight + 'px';
+    }
+  });
+});
+// Open first by default
+const first = document.querySelector('.sv');
+if (first) {
+  first.classList.add('open');
+  first.querySelector('.sv-body').style.maxHeight = first.querySelector('.sv-body').scrollHeight + 'px';
+}
+</script>
+</body>
+</html>

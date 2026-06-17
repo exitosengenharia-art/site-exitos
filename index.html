@@ -123,7 +123,7 @@ button{background:none;border:none;font-family:inherit;cursor:pointer}
 
 /* ══ HERO ════════════════════════════════════════════════════ */
 #hero{min-height:min(100svh,680px);background:var(--navy);display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden}
-#hero::after{content:'';position:absolute;width:clamp(260px,55%,620px);aspect-ratio:1;background:url('logomarcas/Icone.png') no-repeat center/contain;opacity:.13;left:50%;top:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:1}
+#hero::after{content:'';position:absolute;width:clamp(260px,58%,660px);aspect-ratio:1;background:url('logomarcas/Icone.png') no-repeat center/contain;opacity:.22;left:50%;top:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:1;mix-blend-mode:screen}
 /* Diagonal accent (from PDF brand identity) */
 .h-deco{position:absolute;inset:0;pointer-events:none;overflow:hidden}
 .h-deco::before{content:'';position:absolute;top:-10%;right:45%;bottom:-10%;width:6px;background:var(--or);opacity:.35;transform:skewX(-4deg)}
@@ -192,7 +192,7 @@ button{background:none;border:none;font-family:inherit;cursor:pointer}
 
 /* ══ SERVIÇOS ═══════════════════════════════════════════════ */
 #servicos{background:var(--navy);padding:clamp(52px,6vw,80px) 0;position:relative;overflow:hidden}
-#servicos::after{content:'';position:absolute;width:clamp(260px,58%,660px);aspect-ratio:1;background:url('logomarcas/Icone.png') no-repeat center/contain;opacity:.14;left:50%;top:50%;transform:translate(-50%,-50%);pointer-events:none}
+#servicos::after{content:'';position:absolute;width:clamp(260px,58%,660px);aspect-ratio:1;background:url('logomarcas/Icone.png') no-repeat center/contain;opacity:.22;left:50%;top:50%;transform:translate(-50%,-50%);pointer-events:none;mix-blend-mode:screen}
 .sv-hd{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:end;margin-bottom:clamp(44px,5vw,56px)}
 .sv-hd .h2w{margin-top:12px}
 .sv-hd .lead-wh{max-width:400px}
@@ -339,8 +339,9 @@ footer{background:#0B1C2E;border-top:1px solid rgba(255,255,255,.04);padding:cla
 /* ══ RESPONSIVE ═════════════════════════════════════════════ */
 @media(max-width:960px){
   #hero{grid-template-columns:1fr}
-  .h-right{display:none}
-  .h-left{min-height:100svh}
+  .h-right{display:block;position:absolute;inset:0;z-index:0}
+  .h-right::before{background:linear-gradient(to bottom,rgba(27,58,92,.82) 0%,rgba(27,58,92,.65) 60%,rgba(27,58,92,.75) 100%)}
+  .h-left{min-height:100svh;position:relative;z-index:1}
   .h-stats{grid-template-columns:repeat(2,1fr)}
   .hs-item:nth-child(2){border-right:none}
   .hs-item:nth-child(3){border-top:1px solid var(--ld);margin-top:16px;padding-top:16px}
